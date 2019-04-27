@@ -1,0 +1,27 @@
+
+To compile the code the following are required:
+
+- BLAS 
+- LAPACK
+- StarPU
+
+The code tested using the following libraries
+
+- OpenBLAS 0.2.20
+- imkl 2017.1.132
+- StarPU 1.2.2
+- FxT 0.3.3
+
+Compiled using ICC.
+
+The following environment variables are required:
+
+OMP_NUM_THREADS=1
+STARPU_NCPU=<number_of_cores>
+STARPU_FXT_PREFIX=. 
+STARPU_HOME=.
+
+Set <number_of_cores> to max number of cores in the node, preferably.
+
+To compile without FxT, read the StarPU manual.
+
